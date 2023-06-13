@@ -1,0 +1,18 @@
+class NotDefteri:
+    def __init__(self):
+        self.notlar = []
+
+    def not_ekle(self, not_metni):
+        self.notlar.append(not_metni)
+
+    def not_sil(self, not_metni):
+        self.notlar.remove(not_metni)
+
+    def notlari_listele(self):
+        for not_metni in self.notlar:
+            print(not_metni)
+
+not_defteri = NotDefteri()
+not_defteri.not_ekle("Bugün markete git.")
+not_defteri.not_ekle("E-postaları yanıtla.")
+not_defteri.notlari_listele()
